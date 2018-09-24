@@ -1,12 +1,53 @@
-root@a9d111e6dd55:/# dpkg -l |grep g++
+dpkg -l |grep g++
+dpkg -l |grep autoconf
+dpkg -l |grep cmake
+dpkg -l |grep git
+dpkg -l |grep libbz2-dev
+dpkg -l |grep libreadline-dev
+dpkg -l |grep libboost-all-dev
+dpkg -l |grep libcurl4-openssl-dev
+dpkg -l |grep libssl-dev
+dpkg -l |grep libncurses-dev
+dpkg -l |grep doxygen
+dpkg -l |grep ca-certificates
+
+g++                                    4:5.3.1-1ubuntu1                      amd64        GNU C++ compiler
+g++-5                                  5.4.0-6ubuntu1~16.04.10               amd64        GNU C++ compiler
+autoconf                               2.69-9                                all          automatic configure script builder
+cmake                                  3.5.1-1ubuntu3                        amd64        cross-platform, open-source make system
+cmake-data                             3.5.1-1ubuntu3                        all          CMake data files (modules, templates and documentation)
+findutils                              4.6.0+git+20160126-2                  amd64        utilities for finding files--find, xargs
+git                                    1:2.7.4-0ubuntu1.4                    amd64        fast, scalable, distributed revision control system
+git-man                                1:2.7.4-0ubuntu1.4                    all          fast, scalable, distributed revision control system (manual pages)
+libasn1-8-heimdal:amd64                1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - ASN.1 library
+libgssapi3-heimdal:amd64               1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - GSSAPI support library
+libhcrypto4-heimdal:amd64              1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - crypto library
+libheimbase1-heimdal:amd64             1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - Base library
+libheimntlm0-heimdal:amd64             1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - NTLM support library
+libhx509-5-heimdal:amd64               1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - X509 support library
+libkrb5-26-heimdal:amd64               1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - libraries
+libroken18-heimdal:amd64               1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - roken support library
+librtmp1:amd64                         2.4+20151223.gitfa8646d-1ubuntu0.1    amd64        toolkit for RTMP streams (shared library)
+libwind0-heimdal:amd64                 1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - stringprep implementation
+libbz2-dev:amd64                       1.0.6-8                               amd64        high-quality block-sorting file compressor library - development
+libreadline-dev:amd64                  6.3-8ubuntu2                          amd64        GNU readline and history libraries, development files
+libboost-all-dev                       1.58.0.1ubuntu1                       amd64        Boost C++ Libraries development files (ALL) (default version)
+libcurl4-openssl-dev:amd64             7.47.0-1ubuntu2.9                     amd64        development files and documentation for libcurl (OpenSSL flavour)
+libssl-dev:amd64                       1.0.2g-1ubuntu4.13                    amd64        Secure Sockets Layer toolkit - development files
+doxygen                                1.8.11-1                              amd64        Documentation system for C, C++, Java, Python and other languages
+ca-certificates                        20170717~16.04.1                      all          Common CA certificates
+
+
+
+root@a9d111e6dd55:/internal# dpkg -l |grep g++
 ii  g++                                    4:5.3.1-1ubuntu1                      amd64        GNU C++ compiler
 ii  g++-5                                  5.4.0-6ubuntu1~16.04.10               amd64        GNU C++ compiler
-root@a9d111e6dd55:/# dpkg -l |grep autoconf
+root@a9d111e6dd55:/internal# dpkg -l |grep autoconf
 ii  autoconf                               2.69-9                                all          automatic configure script builder
-root@a9d111e6dd55:/# dpkg -l |grep cmake
+root@a9d111e6dd55:/internal# dpkg -l |grep cmake
 ii  cmake                                  3.5.1-1ubuntu3                        amd64        cross-platform, open-source make system
 ii  cmake-data                             3.5.1-1ubuntu3                        all          CMake data files (modules, templates and documentation)
-root@a9d111e6dd55:/# dpkg -l |grep git
+root@a9d111e6dd55:/internal# dpkg -l |grep git
 ii  findutils                              4.6.0+git+20160126-2                  amd64        utilities for finding files--find, xargs
 ii  git                                    1:2.7.4-0ubuntu1.4                    amd64        fast, scalable, distributed revision control system
 ii  git-man                                1:2.7.4-0ubuntu1.4                    all          fast, scalable, distributed revision control system (manual pages)
@@ -20,21 +61,22 @@ ii  libkrb5-26-heimdal:amd64               1.7~git20150920+dfsg-4ubuntu1.16.04.1
 ii  libroken18-heimdal:amd64               1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - roken support library
 ii  librtmp1:amd64                         2.4+20151223.gitfa8646d-1ubuntu0.1    amd64        toolkit for RTMP streams (shared library)
 ii  libwind0-heimdal:amd64                 1.7~git20150920+dfsg-4ubuntu1.16.04.1 amd64        Heimdal Kerberos - stringprep implementation
-root@a9d111e6dd55:/# dpkg -l |grep libbz2-dev
+root@a9d111e6dd55:/internal# dpkg -l |grep libbz2-dev
 ii  libbz2-dev:amd64                       1.0.6-8                               amd64        high-quality block-sorting file compressor library - development
-root@a9d111e6dd55:/# dpkg -l |grep libreadline-dev
+root@a9d111e6dd55:/internal# dpkg -l |grep libreadline-dev
 ii  libreadline-dev:amd64                  6.3-8ubuntu2                          amd64        GNU readline and history libraries, development files
-root@a9d111e6dd55:/# dpkg -l |grep libboost-all-dev
+root@a9d111e6dd55:/internal# dpkg -l |grep libboost-all-dev
 ii  libboost-all-dev                       1.58.0.1ubuntu1                       amd64        Boost C++ Libraries development files (ALL) (default version)
-root@a9d111e6dd55:/# dpkg -l |grep libcurl4-openssl-dev
+root@a9d111e6dd55:/internal# dpkg -l |grep libcurl4-openssl-dev
 ii  libcurl4-openssl-dev:amd64             7.47.0-1ubuntu2.9                     amd64        development files and documentation for libcurl (OpenSSL flavour)
-root@a9d111e6dd55:/# dpkg -l |grep libssl-dev
+root@a9d111e6dd55:/internal# dpkg -l |grep libssl-dev
 ii  libssl-dev:amd64                       1.0.2g-1ubuntu4.13                    amd64        Secure Sockets Layer toolkit - development files
-root@a9d111e6dd55:/# dpkg -l |grep libncurses-dev
-root@a9d111e6dd55:/# dpkg -l |grep doxygen
+root@a9d111e6dd55:/internal# dpkg -l |grep libncurses-dev
+root@a9d111e6dd55:/internal# dpkg -l |grep doxygen
 ii  doxygen                                1.8.11-1                              amd64        Documentation system for C, C++, Java, Python and other languages
 root@a9d111e6dd55:/internal# dpkg -l |grep ca-certificates
 ii  ca-certificates                        20170717~16.04.1                      all          Common CA certificates
 
-end
+
+
 
