@@ -33,4 +33,8 @@ ii  libssl-dev:amd64                       1.0.2g-1ubuntu4.13                   
 root@a9d111e6dd55:/# dpkg -l |grep libncurses-dev
 root@a9d111e6dd55:/# dpkg -l |grep doxygen
 ii  doxygen                                1.8.11-1                              amd64        Documentation system for C, C++, Java, Python and other languages
+root@a9d111e6dd55:/internal# dpkg -l |grep ca-certificates
+ii  ca-certificates                        20170717~16.04.1                      all          Common CA certificates
+
+end
 
